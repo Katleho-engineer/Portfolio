@@ -1,0 +1,181 @@
+/* || RESET || */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* || GENERAL || */
+body {
+    background-color: #081b29;
+    height: 97vh;
+    padding: 2rem 4rem;
+}
+
+
+/* || HEADER || */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 2.5rem;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a:any-link {
+    color: white;
+    font-size: 1.3rem;
+}
+
+header nav a:nth-child(4) {
+    color: #00abf0;
+}
+
+header nav a:hover {
+    color: #00abf0;
+}
+
+/* || MAIN || */
+
+.exp {
+    margin-top: 4rem;
+    padding: 0 0 0 3rem;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 9rem;
+}
+.exp :is(h1, p) {
+    color: white;
+}
+
+.vl {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    border-left: 6px solid #00abf0;
+    border-radius: 7px;
+
+}
+
+/* || Right Video || */
+
+.exp_left :is(h1, p, li) {
+    color: white;
+}
+
+.exp_left h1 {
+    color: rgba(0, 171, 240, 0.75);
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.exp_left :is(p, li) {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.exp_left ul {
+    margin-left: 1rem;
+}
+
+.exp_left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* || Right Video || */
+
+.exp_right video {
+    width: 600px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/*  BUTTON  */
+
+.exp_right .btn {
+    display: flex;
+    justify-content: space-between;
+
+    width: 345px;
+    height: 50px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 100%;
+    background-color: #00abf0;
+    color: #081b29;
+
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.btn a:hover {
+    color: #00abf0;
+}
+
+.btn a:nth-child(2) {
+    background-color: transparent;
+    color: #00abf0;
+}
+
+.btn a:nth-child(2)::before {
+    background-color: #00abf0;
+}
+
+.btn a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn a::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 100%;
+    background-color: #081b29;
+    z-index: -1;
+    transition: 1s;
+}
+
+.btn a:hover::before {
+    width: 100%;
+}
