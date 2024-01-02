@@ -84,6 +84,16 @@ main {
 
 .hero p {
     color: snow;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.hero article p:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
+.hero article p:nth-child(2) {
+    margin-bottom: 1rem;
 }
 
 

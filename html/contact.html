@@ -19,5 +19,46 @@
           <a href="contact.html">Contact</a>
       </nav>
   </header>
+
+    <main>
+        <section class="container">
+            <h1 class="title"> Contact Details</h1>
+
+            <section class="contact">
+                <h2>Email</h2>
+                <p><a href="mailto:katleho.professional@gmail.com">katleho.professional@gmail.com</a></p>
+
+                <h2>Mobile number</h2>
+                <p>+2764 047 8156</p>
+
+                <h2>Availability</h2>
+                <p>Available</p>
+            </section>
+        </section>
+
+        <section class="container">
+            <h1 class="title">Send Me Message</h1>
+
+            <form class="contact" action="https://formsubmit.co/katleho.professional@gmail.com" method="POST">
+                <label>Your Name</label>
+                <input type="text" name="name" required>
+
+                <label>Your Company</label>
+                <input type="text" name="company" required>
+
+                <label>Your Contact Details</label>
+                <input type="text" name="contact" required>
+
+                <label>Your Message</label>
+                <textarea name="message" required></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="submit" value="Submit" class="submit">
+            </form>
+
+
+        </section>
+    </main>
 </body>
 </html>

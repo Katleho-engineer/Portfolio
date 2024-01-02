@@ -49,4 +49,81 @@ header nav a:hover {
     color: #00abf0;
 }
 
-/* || MAIN || */
+/* || CONTACT CONTAINER || */
+
+.container {
+    display: grid;
+    place-content: center;
+    margin-top: 4rem;
+}
+
+.container .title {
+    background-color: #d5cccc;
+    color: #081b29;
+    padding: 1.4rem;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.container .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem 1rem;
+    padding: 2rem 0.4rem 2rem 0.4rem;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(139, 160, 173, 0.1);
+}
+
+.container .contact h2 {
+    color: #8ba0ad;
+}
+
+.container .contact p {
+    color: #d5cccc;
+    font-size: 1.3rem;
+}
+
+.container .contact a{
+    color: #d5cccc;
+    font-size: 1.3rem;
+}
+
+
+.container .contact label {
+    color: #8ba0ad;
+    font-size: 1.6rem;
+    margin-right: 1.3rem;
+}
+
+.container .contact input:focus {
+    outline-color: #8ba0ad;
+    color: #5e5b5b;
+    padding: 0 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.container .contact textarea:focus {
+    outline-color: #8ba0ad;
+    color: #5e5b5b;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+.container .submit {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    background-color: #5e5a5a;
+    color: #b1aeb9;
+
+    padding: 0.5rem 0;
+    border-radius: 15px;
+    border: none;
+    width: 80%;
+    cursor: pointer;
+}
+
+.container .submit:hover {
+    color: white;
+}

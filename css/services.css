@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
 }
 
 a {
@@ -50,3 +51,38 @@ header nav a:hover {
 }
 
 /* || MAIN || */
+
+
+/* || DISCLAIMER || */
+
+.disclaimer {
+    padding: 5rem 10rem 2rem 10rem;
+}
+
+.disclaimer p {
+    color: #8ba0ad;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.disclaimer h1 {
+    text-align: center;
+    color: #00abf0;
+    font-size: 1.9rem;
+    margin-top: 2.5rem;
+}
+
+/* || SERVICES || */
+
+.services {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+}
+
+.services h1 {
+    color: #8ba0ad;
+    font-size: 2rem;
+}
