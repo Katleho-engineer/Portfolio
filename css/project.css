@@ -1,12 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* || RESET || */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.hide1 {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 
@@ -178,4 +193,145 @@ header nav a:hover {
 
 .btn a:hover::before {
     width: 100%;
+}
+
+
+/* || MEDIA QUERIES || */
+
+@media (max-width: 550px) {
+    .exp_right video {
+        width: 250px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menu_container {
+        position: relative;
+    }
+
+    .menu_container .menu {
+        position: absolute;
+        top: 3.3rem;
+        right: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        padding: 1rem;
+    }
+
+    .menu_container label {
+        color: white;
+    }
+
+    .menu_in {
+        font-size: 4rem;
+    }
+
+    #menu_in:checked ~ .menu .hide1 {
+        display: block;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+     #menu_in:checked ~ .menu .hide1:nth-child(4) {
+         color: #00abf0;
+     }
+
+    #menu_in:checked ~ .menu {
+        background-color: rgb(91, 91, 110);
+        z-index: 1;
+    }
+
+    #menu_in:checked ~ label {
+        color: #00abf0;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 1000px) {
+
+    .hide {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menu_container {
+        position: relative;
+    }
+
+    .menu_container .menu {
+        position: absolute;
+        top: 3.3rem;
+        right: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        padding: 1rem;
+    }
+
+    .menu_container label {
+        color: white;
+    }
+
+    .menu_in {
+        font-size: 4rem;
+    }
+
+    #menu_in:checked ~ .menu .hide1 {
+        display: block;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+     #menu_in:checked ~ .menu .hide1:nth-child(4) {
+         color: #00abf0;
+     }
+
+    #menu_in:checked ~ .menu {
+        background-color: rgb(91, 91, 110);
+        z-index: 1;
+    }
+
+    #menu_in:checked ~ label {
+        color: #00abf0;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exp_right video {
+        width: 400px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .exp_right video {
+        width: 400px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
 }

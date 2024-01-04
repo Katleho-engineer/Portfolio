@@ -1,15 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* || RESET || */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
+.hide {
+    display: none;
+}
+
+.hide1 {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
 
 /* || GENERAL || */
 body {
@@ -85,4 +98,67 @@ header nav a:hover {
 .services h1 {
     color: #8ba0ad;
     font-size: 2rem;
+}
+
+
+/* || MEDIA QUERIES || */
+
+@media (max-width: 1000px) {
+
+    .hide {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menu_container {
+        position: relative;
+    }
+
+    .menu_container .menu {
+        position: absolute;
+        top: 3.3rem;
+        right: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        padding: 1rem;
+    }
+
+    .menu_container label {
+        color: white;
+    }
+
+    .menu_in {
+        font-size: 4rem;
+    }
+
+    #menu_in:checked ~ .menu .hide1 {
+        display: block;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+     #menu_in:checked ~ .menu .hide1:nth-child(5) {
+         color: #00abf0;
+     }
+
+    #menu_in:checked ~ .menu {
+        background-color: rgb(91, 91, 110);
+    }
+
+    #menu_in:checked ~ label {
+        color: #00abf0;
+    }
+
+    .hero article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
