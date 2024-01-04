@@ -150,8 +150,12 @@ header nav a:hover {
         color: white;
     }
 
-    .menu_in {
-        font-size: 4rem;
+    .menu_in img {
+        color: white;
+        background-color: white;
+        width: 45px;
+        height: auto;
+        cursor: pointer;
     }
 
     #menu_in:checked ~ .menu .hide1 {
@@ -169,9 +173,9 @@ header nav a:hover {
         z-index: 1;
     }
 
-    #menu_in:checked ~ label {
-        color: #00abf0;
-    }
+    #menu_in:checked ~ .menu_in img {
+         background-color: #00abf0;
+     }
 
     .hero {
         display: flex;
